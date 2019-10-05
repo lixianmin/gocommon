@@ -1,0 +1,25 @@
+{
+	"comment": "",
+	"ignore": "",
+	"package": [
+		{
+			"checksumSHA1": "Wk7qm1TY4+MIeI0OczSii3uzvw0=",
+			"path": "github.com/astaxie/beego/logs",
+			"revision": "053a075344c118a5cc41981b29ef612bb53d20ca",
+			"revisionTime": "2018-07-31T13:18:48Z"
+		},
+		{
+			"checksumSHA1": "jVKE6wN/UdHv6HguosQXuLeGLGw=",
+			"path": "github.com/lixianmin/gocore/loom",
+			"revision": "69e55c3b51e9187d0d68f7fdce6ee2ee6ec7b444",
+			"revisionTime": "2019-03-15T02:01:28Z"
+		},
+		{
+			"checksumSHA1": "oycZajC/yBkGo82rIZ/6U456tCI=",
+			"path": "github.com/pkg/errors",
+			"revision": "816c9085562cd7ee03e7f8188a1cfd942858cded",
+			"revisionTime": "2018-03-11T21:45:15Z"
+		}
+	],
+	"rootPath": "coinbene.com/gocommon"
+}
