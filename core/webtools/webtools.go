@@ -8,6 +8,7 @@ Copyright (C) - All Rights Reserved
 package webtools
 
 import (
+	"crypto/tls"
 	"io/ioutil"
 	"net/http"
 	"time"
@@ -31,8 +32,13 @@ func Get(url string, initRequest func(request *http.Request)) ([]byte, error) {
 		initRequest(request)
 	}
 
+	var transport = &http.Transport{
+		TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
+	}
+
 	var client = http.Client{
-		Timeout: time.Second * 20, // 控制从链接建立到返回的整个生命周期的时间
+		Transport: transport,
+		Timeout:   time.Second * 20, // 控制从链接建立到返回的整个生命周期的时间
 	}
 
 	response, err := client.Do(request)
